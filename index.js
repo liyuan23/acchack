@@ -69,7 +69,6 @@ app.use((req, res, next) => {
 
 //routes
 app.get("/", (req, res) => {
-  console.log("running")
   User.find()
     .then(users => {
       res.render("index", {
@@ -79,6 +78,10 @@ app.get("/", (req, res) => {
     .catch(err => {
       console.log(err)
     })
+})
+
+app.get("/webdev", (req, res) => {
+  res.render("webdev")
 })
 
 app.get("/logout", hasLoggedOut, (req, res) => {
