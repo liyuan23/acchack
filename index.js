@@ -84,6 +84,10 @@ app.get("/webdev", (req, res) => {
   res.render("webdev")
 })
 
+app.get("/mentors", (req, res) => {
+  res.render("mentors")
+})
+
 app.get("/logout", hasLoggedOut, (req, res) => {
   req.logout()
   res.redirect("/")
