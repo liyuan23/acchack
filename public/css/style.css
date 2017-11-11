@@ -128,3 +128,12 @@ footer.page-footer {
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4);
 }
+
+#brandLogo {
+  height: 64px;
+  width: 128px;
+}
+
+#logo-container {
+  height: 64px;
+}
