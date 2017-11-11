@@ -55,3 +55,12 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#brandLogo {
+  height: 64px;
+  width: 128px;
+}
+
+#logo-container {
+  height: 64px;
+}

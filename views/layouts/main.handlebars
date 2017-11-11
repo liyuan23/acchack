@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div class="navbar-fixed">
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="/" class="brand-logo">
+            <img src="./images/careership.png" alt="brand-logo" id="brandLogo"></img>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Guidance</a></li>
+            {{#if user}}
+            <li><a href="/board"><i class="material-icons right">assignment</i>Sprint Board</a></li>
+            <li><a href="/manageProject"><i class="material-icons right">folder_shared</i>Manage Project</a></li>
+            <li><a class="nav-link" href="/profile"><i class="material-icons right">account_circle</i>{{ user.name }}</a></li>
+            <li><a class="nav-link" href="/logout">Logout</a></li>
+            {{else}}
+            <li><a class="nav-link" href="/register">Register</a></li>
+            <li><a class="nav-link" href="/login">Login</a></li>
+            {{/if}}
+          </ul>
 
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-          {{#if user}}
-          <li><a href="/board"><i class="material-icons right">assignment</i>Sprint Board</a></li>
-          <li><a href="/manageProject"><i class="material-icons right">folder_shared</i>Manage Project</a></li>
-          <li><a class="nav-link" href="/profile"><i class="material-icons right">account_circle</i>{{ user.name }}</a></li>
-          <li><a class="nav-link" href="/logout">Logout</a></li>
-          {{else}}
-          <li><a class="nav-link" href="/register">Register</a></li>
-          <li><a class="nav-link" href="/login">Login</a></li>
-          {{/if}}
-        </ul>
-
-
-
-
-
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div>
 
     {{{ body }}}
 
