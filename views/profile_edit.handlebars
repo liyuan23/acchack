@@ -8,51 +8,66 @@
 
    <b>Industry Interest:</b>
    <br>
-   <div style="border: thin solid black; width:100%">
-      <input type="checkbox"> Advertising </input>
-      <input type="checkbox" id="test5" />
-      <label for="test5">Red</label>
-      <input type="checkbox"> Construction </input>
-      <input type="checkbox"> Education </input>
-      <input type="checkbox" checked> Electronic </input>
-      <input type="checkbox" checked> FMCG </input>
-      <input type="checkbox"> Retail </input>
-      <input type="checkbox" checked> Technology </input>
+   <div class="row">
+      <div class="col s12 m12">
+        <div class="card-panel lime lighten-4">
+               <input type="checkbox" id="ind1"> <label class="black-text" for="ind1">Advertising</label>
+               <input type="checkbox" id="ind2"> <label class="black-text" for="ind2">Construction</label>
+               <input type="checkbox" id="ind3"> <label class="black-text" for="ind3">Eduation</label>
+               <input type="checkbox" id="ind4" checked> <label class="black-text" for="ind4">Electronic</label>
+               <input type="checkbox" id="ind5" checked> <label class="black-text" for="ind5">FMCG</label>
+               <input type="checkbox" id="ind6"> <label class="black-text" for="ind6">Retail</label>
+               <input type="checkbox" id="ind7" checked> <label class="black-text" for="ind7">Technology</label>
+        </div>
+      </div>
    </div>
 
-   <br><br>
-
-   <b>Function Interest:</b>
-   <div style="border: thin solid black; width:100%">
-      <input type="checkbox"> Accounting </input>
-      <input type="checkbox"> Construction </input>
-      <input type="checkbox"> Procurement </input>
-      <input type="checkbox" checked> System Engineer </input>
-      <input type="checkbox"> Teaching </input>
-      <input type="checkbox"> Underwriting </input>
-      <input type="checkbox" checked> Web Development </input>
+   <b>Functional Interest</b>
+   <br>
+   <div class="row">
+      <div class="col s12 m12">
+        <div class="card-panel lime lighten-4">
+               <input type="checkbox" id="int1"> <label class="black-text" for="int1">Accounting</label>
+               <input type="checkbox" id="int2"> <label class="black-text" for="int2">Firefighting</label>
+               <input type="checkbox" id="int3"> <label class="black-text" for="int3">Procurement</label>
+               <input type="checkbox" id="int4" checked> <label class="black-text" for="int4">System Engineer</label>
+               <input type="checkbox" id="int5"> <label class="black-text" for="int5">Teaching</label>
+               <input type="checkbox" id="int6"> <label class="black-text" for="int6">Underwriting</label>
+               <input type="checkbox" id="int7" checked> <label class="black-text" for="int7">Web Development</label>
+        </div>
+      </div>
    </div>
-
-   <br><br>
 
    <b>Skillset/Personality:</b>
-   <div style="border: thin solid black; width:100%">
-      MBTI: INTP
+   <div class="row">
+      <div class="col s12 m12">
+        <div class="card-panel lime lighten-4">
+            <p>MBTI: INTP</p>
 
-      Skillset: C++, Python, Django, Node.js
-   </div><br>
-   <div><a href="">Click here to complete other tests</a>
-
-   <br><br>
-
-   <b>Description:</b>
-   <div style="border: thin solid black; width:100%">
-      I really love technology! However, I'm not entirely sure if this is what I want to do for my career and would love to hear from a full-stack developer!
+            <p>Skillset: C++, Python, Django, Node.js</p>
+        </div>
+      </div>
    </div>
+   <div><a href=""><small>Click here to complete other tests</small></a>
 
    <br><br>
+   <br><br>
 
-   <input type="submit">
+   <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea validate" >I really love technology! However, I'm not entirely sure if this is what I want to do for my career and would love to hear from a full-stack developer!</textarea>
+          <label for="textarea1">Description</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+   <input class="btn" type="submit">
+   <br><br>
 
  </div>
 
