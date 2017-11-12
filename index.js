@@ -88,6 +88,14 @@ app.get("/guidance", (req, res) => {
   res.render("guidance")
 })
 
+app.get("/profile", (req, res) => {
+  res.render("profile")
+})
+
+app.get("/profile_edit", (req, res) => {
+  res.render("profile_edit")
+})
+
 app.get("/logout", hasLoggedOut, (req, res) => {
   req.logout()
   res.redirect("/")
