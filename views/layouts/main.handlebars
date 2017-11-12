@@ -16,7 +16,7 @@
             {{!-- <img src="./images/careership.png" alt="brand-logo" id="brandLogo"></img> --}}
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Careers</a></li>
+            <li><a href="/careers">Careers</a></li>
             <li><a href="/guidance">Guidance</a></li>
             {{#if user}}
             <li><a class="nav-link" href="/profile"><i class="material-icons right">account_circle</i>{{ user.name }}</a></li>
@@ -35,7 +35,10 @@
       </nav>
     </div>
 
-    {{{ body }}}
+    <main>
+      {{{ body }}}
+    </main>
+
     <footer class="page-footer teal">
       <div class="container">
         <div class="row">
