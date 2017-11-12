@@ -101,6 +101,10 @@ app.get("/logout", hasLoggedOut, (req, res) => {
   res.redirect("/")
 })
 
+app.get("/careers", (req, res) => {
+  res.render("careers")
+})
+
 app.use("/register", isLoggedIn, register_routes)
 app.use("/login", isLoggedIn, login_routes)
 

@@ -20,7 +20,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 300px;
   line-height: 0;
   height: auto;
   color: rgba(255, 255, 255, 0.9);
@@ -142,9 +142,23 @@ footer.page-footer {
   color: rgba(0, 0, 0, 0.87);
 }
 
-html,
+.jobs > a:hover {
+  text-decoration: underline;
+}
+
+/*html,
 body {
   height: 520px;
+}*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 #full,
