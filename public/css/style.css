@@ -1,4 +1,5 @@
 /* Custom Stylesheet */
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -6,8 +7,7 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
+nav ul a, nav .brand-logo {
   color: #444;
 }
 
@@ -25,6 +25,7 @@ p {
   height: auto;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .parallax-container .section {
   width: 100%;
 }
@@ -48,6 +49,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -138,11 +140,11 @@ footer.page-footer {
   height: 64px;
 }
 
-.jobs > a {
+.jobs>a {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.jobs > a:hover {
+.jobs>a:hover {
   text-decoration: underline;
 }
 
@@ -161,9 +163,7 @@ main {
   flex: 1 0 auto;
 }
 
-#full,
-#box,
-#box2 {
+#full, #box, #box2 {
   height: 100%;
 }
 
@@ -191,16 +191,19 @@ main {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
+
 div.card-reveal span.card-title {
   color: #ffffff !important;
 }
+
 .tabs {
   background-color: transparent;
 }
-td,
-th {
+
+td, th {
   padding: 5px 5px !important;
 }
-table.highlight > tbody > tr:hover {
+
+table.highlight>tbody>tr:hover {
   background-color: rgba(238, 110, 115, 0.6);
 }
