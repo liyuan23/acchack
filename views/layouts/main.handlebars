@@ -9,17 +9,17 @@
   </head>
   <body>
     <div class="navbar-fixed">
-      <nav class="white" role="navigation">
+      <nav class="teal" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="/" class="brand-logo">
             {{!-- Careership --}}
-            <img src="./images/logo.png" alt="brand-logo" id="brandLogo" style="height:62px;width:90px;"></img>
+            <img src="./images/logo.png" alt="brand-logo" id="brandLogo" style="height:64px;width:289px;padding:5px;"></img>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="/careers">Careers</a></li>
-            <li><a href="/guidance">Guidance</a></li>
-            <li><a href="/recommend">Recommend Me</a></li>
-            <li><a href="/profile">Profile</a></li>
+            <li><a class="white-text" href="/careers">Careers</a></li>
+            <li><a class="white-text" href="/guidance">Guidance</a></li>
+            <li><a class="white-text" href="/recommend">Recommend Me</a></li>
+            <li><a class="white-text" href="/profile">Profile</a></li>
             {{#if user}}
             <li><a class="nav-link" href="/profile"><i class="material-icons right">account_circle</i>{{ user.name }}</a></li>
             <li><a class="nav-link" href="/logout">Logout</a></li>
