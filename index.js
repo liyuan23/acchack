@@ -105,6 +105,10 @@ app.get("/careers", (req, res) => {
   res.render("careers")
 })
 
+app.get("/recommend", (req, res) => {
+  res.render("recommend")
+})
+
 app.use("/register", isLoggedIn, register_routes)
 app.use("/login", isLoggedIn, login_routes)
 
